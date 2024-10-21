@@ -42,7 +42,7 @@ const CommercialProjects: React.FC = () => {
 
   return (
     <section className='bg-[#E7E7E7] text-[#6D6E72] py-16 px-4 sm:px-6 lg:px-8 w-full'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto md:px-12 px-2'>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
