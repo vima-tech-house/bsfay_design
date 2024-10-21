@@ -26,21 +26,10 @@ export default function Home() {
   return (
     <LenisProvider>
       <AnimatePresenceProvider>
-        <main className='box-border flex min-h-screen bg-[#191B20] w-full flex-col items-center overflow-hidden'>
+        <main className='box-border flex min-h-screen bg-[#F2F1EF]  w-full flex-col items-center overflow-hidden'>
           <Navbar />
           <Hero />
           <Projects />
-          <Team />
-          <FromIdea />
-          <Faqs
-            handleClick={handleClick}
-            isSomeActive={isSomeActive}
-            data={faqs}
-            turn={active}
-            setTurn={setActive}
-          />
-          <Testimonial />
-          <HireUs />
           <Footer />
         </main>
       </AnimatePresenceProvider>

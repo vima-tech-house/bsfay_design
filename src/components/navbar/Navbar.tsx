@@ -64,7 +64,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className='fixed left-0 right-0 top-0 z-50 transition-all duration-300'>
-      <div
+      <motion.div
+        initial='hidden'
+        animate='visible'
+        exit='hidden'
+        variants={navbarContentVariants}
         className={`w-full mx-auto flex items-center justify-between lg:px-40 md:px-20 sm:py-4 px-8 py-4 ${
           isHeroSection ? "justify-center" : "bg-[#2D2D2D]"
         }`}
@@ -124,7 +128,7 @@ const Navbar: React.FC = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </motion.div>
 
       <motion.div
         className='absolute left-0 top-0 z-50 h-full w-64 bg-[#2D2D2D] text-white md:hidden lg:hidden rounded-br-xl '
