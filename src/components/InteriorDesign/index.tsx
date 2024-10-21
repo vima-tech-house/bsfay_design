@@ -70,7 +70,7 @@ const InteriorDesignSection: React.FC = () => {
             >
               Setting new standards in interior des{" "}
               <span className='xl:text-white xl:-ml-6 sm:-ml-4 -ml-2'>ign</span>{" "}
-              <span className='lg:text-white xl:-ml-6 sm:-ml-4 -ml-2'>
+              <span className='lg:text-white xl:text-[#6D6E72]'>
                 excellence
               </span>{" "}
             </h2>
