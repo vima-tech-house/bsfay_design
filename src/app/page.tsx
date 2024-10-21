@@ -16,6 +16,7 @@ import LenisProvider from "helpers/lenis-provider";
 import AnimatePresenceProvider from "helpers/animate-presence-provider";
 import WelcomeSection from "components/welcome";
 import ContentFeature from "components/FeaturedWork/content_featured";
+import CommercialProjects from "components/commercialProjects";
 
 export default function Home() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -34,6 +35,7 @@ export default function Home() {
           <Projects />
           <WelcomeSection />
           <ContentFeature />
+          <CommercialProjects />
           <Footer />
         </main>
       </AnimatePresenceProvider>

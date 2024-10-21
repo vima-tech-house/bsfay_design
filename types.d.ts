@@ -24,3 +24,9 @@ interface ModalProps {
   title: string;
   children: React.ReactNode;
 }
+
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+}
