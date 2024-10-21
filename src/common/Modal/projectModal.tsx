@@ -2,6 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
+import { Roboto } from "next/font/google";
+
+const acumin_pro = Roboto({
+  weight: "400",
+  subsets: ["latin"]
+});
 
 const ProjectModal: React.FC<ProjectModalProps> = ({
   isOpen,
@@ -42,12 +48,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 <AiOutlineClose size={20} />
               </button>
             </div>
-            <div className='p-6 absolute bottom-0 bg-black/60'>
+            <div className='p-6 absolute bottom-0 bg-black/60 w-full'>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className='text-3xl font-bold mb-2'
+                className={`mb-2 text-left md:text-3xl text-xl font-medium text-[#fff]  ${acumin_pro.className}`}
               >
                 {project.title}
               </motion.h2>
@@ -55,7 +61,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className='text-white mb-4'
+                className='text-white mb-4 text-sm sm:text-md'
               >
                 {project.location} · Style: {project.style}
               </motion.p>
@@ -63,7 +69,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className='text-white'
+                className='text-white text-sm sm:text-md'
               >
                 {project.description}
               </motion.p>

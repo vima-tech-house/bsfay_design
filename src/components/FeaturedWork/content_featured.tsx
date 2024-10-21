@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import ProjectModal from "common/Modal/projectModal";
+import formatDescription from "helpers/textFormater";
 
 const acumin_pro = Roboto({
   weight: "400",
@@ -200,11 +201,13 @@ function ContentFeature() {
                         />
                       </div>
                       <div className='pt-4'>
-                        <h3 className='text-xl text-[#6D6E72] font-medium mb-2'>
+                        <h3
+                          className={`mb-2 text-left text-xl font-medium text-[#6D6E72]  ${acumin_pro.className}`}
+                        >
                           {work.title}
                         </h3>
                         <p className='text-gray-600 text-sm font-light'>
-                          {work.description}
+                          {formatDescription(work.description)}
                         </p>
                       </div>
                     </div>
@@ -259,11 +262,13 @@ function ContentFeature() {
                         />
                       </div>
                       <div className='pt-4'>
-                        <h3 className='text-xl text-[#6D6E72] font-medium mb-2'>
+                        <h3
+                          className={`mb-2 text-left text-xl font-medium text-[#6D6E72]  ${acumin_pro.className}`}
+                        >
                           {work.title}
                         </h3>
                         <p className='text-gray-600 text-sm font-light'>
-                          {work.description}
+                          {formatDescription(work.description)}
                         </p>
                       </div>
                     </div>
