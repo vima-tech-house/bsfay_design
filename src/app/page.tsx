@@ -14,6 +14,8 @@ import { faqs } from "../data/faqs";
 import Footer from "common/Footer";
 import LenisProvider from "helpers/lenis-provider";
 import AnimatePresenceProvider from "helpers/animate-presence-provider";
+import WelcomeSection from "components/welcome";
+import ContentFeature from "components/FeaturedWork/content_featured";
 
 export default function Home() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -30,6 +32,8 @@ export default function Home() {
           <Navbar />
           <Hero />
           <Projects />
+          <WelcomeSection />
+          <ContentFeature />
           <Footer />
         </main>
       </AnimatePresenceProvider>

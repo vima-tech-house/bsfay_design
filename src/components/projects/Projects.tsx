@@ -1,15 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-
 import Image from "next/image";
-import { Bebas_Neue } from "@next/font/google";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
-
-const bebasNeue = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"]
-});
 
 const ImpactSection: React.FC = () => {
   useEffect(() => {

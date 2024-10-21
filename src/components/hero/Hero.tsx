@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { IoArrowForwardSharp } from "react-icons/io5";
 import { Roboto } from "@next/font/google";
 
-import AboutUs from "../about/AboutUs";
-import Button from "common/Button";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import ButtonDown from "common/Button/buttonDown";
 
