@@ -30,3 +30,9 @@ interface Project {
   description: string;
   image: string;
 }
+
+interface ValueCard {
+  title: string;
+  description: string;
+  icon: string;
+}

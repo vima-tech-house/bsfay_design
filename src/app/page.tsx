@@ -18,6 +18,7 @@ import WelcomeSection from "components/welcome";
 import ContentFeature from "components/FeaturedWork/content_featured";
 import CommercialProjects from "components/commercialProjects";
 import InteriorDesignSection from "components/InteriorDesign";
+import OurValuesComponent from "components/OurValues";
 
 export default function Home() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -38,6 +39,7 @@ export default function Home() {
           <ContentFeature />
           <CommercialProjects />
           <InteriorDesignSection />
+          <OurValuesComponent />
           <Footer />
         </main>
       </AnimatePresenceProvider>
