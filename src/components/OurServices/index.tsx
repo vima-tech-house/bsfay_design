@@ -101,7 +101,7 @@ function OurServicesSection() {
   }, []);
 
   return (
-    <section className='relative min-h-screen w-full lg:flex justify-start py-16 items-center bg-cover bg-center text-white'>
+    <section className='relative min-h-screen w-full lg:flex bg-[#383836] justify-start py-16 items-center bg-cover bg-center text-white'>
       <Image
         src='/images/portfolio2.svg'
         alt='Background'

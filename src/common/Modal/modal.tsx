@@ -36,14 +36,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className='fixed inset-0 bg-black/50 z-100 backdrop-blur-sm '
+            className='fixed inset-0 bg-black/50 z-50 backdrop-blur-sm '
           />
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className='fixed top-[20%] left-[26%] -translate-x-1/2 w-full max-w-2xl bg-[#383836] z-90 rounded-sm shadow-xl'
+            className='fixed top-[20%] left-[26%] -translate-x-1/2 w-full max-w-2xl bg-[#383836] z-50 rounded-sm shadow-xl'
           >
             <div className='p-12 relative'>
               <button

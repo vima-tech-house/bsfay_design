@@ -65,7 +65,7 @@ const InteriorDesignSection: React.FC = () => {
         >
           <div className='space-y-6 flex-col flex justify-end'>
             <h2
-              className={`mb-4 text-left lg:absolute text-4xl max-w-5xl  w-full leading-10  lg:-top-20 xl:-top-24  z-50 font-bold sm:text-6xl lg:text-7xl  xl:text-8xl ${acumin_pro.className}`}
+              className={`mb-4 text-left lg:absolute text-4xl max-w-5xl  w-full leading-10  lg:-top-20 xl:-top-24  z-10 font-bold sm:text-6xl lg:text-7xl  xl:text-8xl ${acumin_pro.className}`}
               data-aos='fade-up'
             >
               Setting new standards in interior des{" "}

@@ -1,53 +1,78 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedinIn
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Footer = () => {
   const socialIcons = [
-    { Icon: FaFacebookF, href: "#" },
-    { Icon: FaTwitter, href: "#" },
-    { Icon: FaYoutube, href: "#" },
-    { Icon: FaLinkedinIn, href: "#" }
+    { Icon: FaInstagram, href: "#" },
+    { Icon: FaFacebookF, href: "#" }
   ];
 
   return (
-    <footer className='w-full bg-[#1E2024] text-white'>
-      <div className='mx-auto w-full max-w-6xl py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center'>
-        <Image
-          width={160}
-          height={40}
-          src='/logo.svg'
-          className='mb-4'
-          alt='VIMA logo'
-        />
-        <p className='text-center mb-4 max-w-md'>
-          Find a job, home, or the perfect item. Discover, Connect, and Grow
-          with VIMA.
-        </p>
-        <p className='text-center mb-4'>We're social. Connect with us on</p>
-        <div className='flex space-x-4 mb-4'>
-          {socialIcons.map(({ Icon, href }, index) => (
-            <a
-              key={index}
-              href={href}
-              className='bg-white text-gray-900 rounded-full p-2 hover:bg-[#615FEB] hover:text-[#fff] transition-colors duration-200'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <Icon size={20} />
-            </a>
-          ))}
+    <motion.footer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className='w-full bg-[#2D2D2D] relative min-h-screen/2 bg-contain bg-center text-white py-16'
+    >
+      <Image
+        src='/footer.svg'
+        alt='Background'
+        layout='fill'
+        objectFit='cover'
+        priority
+        className='object-contain object-bottom bg-no-repeat w-12 h-12'
+      />
+      <div className='mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col items-center'>
+        <div data-aos='fade-up' data-aos-delay='100' className='mb-8'>
+          <div className='flex mx-auto w-full justify-center pb-4'>
+            <Image
+              width={160}
+              height={40}
+              src='/images/white.svg'
+              className='w-full h-20 object-cover object-center'
+              alt='BSFAY monogram'
+            />
+          </div>
         </div>
-        <p className='text-sm text-gray-400 pt-6'>
-          © 2024 VIMA. All rights reserved.
-        </p>
+
+        <div
+          data-aos='fade-up'
+          data-aos-delay='200'
+          className='mb-8 text-center max-w-md'
+        >
+          <p className=' font-light'>
+            We create living spaces unique to our clients dreams and vision.
+          </p>
+        </div>
+
+        <div
+          data-aos='fade-up'
+          data-aos-delay='300'
+          className='mb-6 text-center'
+        >
+          <p className=' mb-4 font-light'>Let's stay in touch. Follow us on</p>
+          <div className='flex justify-center space-x-4'>
+            {socialIcons.map(({ Icon, href }, index) => (
+              <a
+                key={index}
+                href={href}
+                className='bg-white text-[#1E1E1E] rounded-full p-2 w-8 h-8 flex items-center justify-center hover:bg-gray-200 transition-colors duration-200'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Icon size={16} />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div data-aos='fade-up' data-aos-delay='400' className=' text-gray-400'>
+          <p className='font-light'>© 2024 Bi.SFay. All rights reserved..</p>
+        </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
