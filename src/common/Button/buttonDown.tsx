@@ -1,0 +1,24 @@
+import React from "react";
+import Link from "next/link";
+import { IconType } from "react-icons";
+
+interface ButtonProps {
+  text: string;
+  icon?: IconType;
+  href: string;
+}
+
+const ButtonDown: React.FC<ButtonProps> = ({ text, icon: Icon, href }) => {
+  return (
+    <Link href={href}>
+      <button className='flex items-center justify-center bg-black/70 animate-bounce hover:animate-none duration-500  py-4 text-black border-white border-2 rounded-t-full rounded-b-full transition-colors hover:bg-[#000]/80'>
+        {text}
+        {Icon && (
+          <Icon className='text-white md:text-3xl sm:text-2xl text-xl' />
+        )}
+      </button>
+    </Link>
+  );
+};
+
+export default ButtonDown;
