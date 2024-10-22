@@ -36,3 +36,8 @@ interface ValueCard {
   description: string;
   icon: string;
 }
+
+interface OurServiceCards {
+  title: string;
+  description: string;
+}

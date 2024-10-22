@@ -4,13 +4,6 @@ import { useState } from "react";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
 import Projects from "../components/projects/Projects";
-import Team from "../components/team/Team";
-import Faqs from "../components/Faqs";
-import FromIdea from "../components/FromIdea";
-import HireUs from "../components/HireUs";
-import Testimonial from "../components/Testimonial";
-
-import { faqs } from "../data/faqs";
 import Footer from "common/Footer";
 import LenisProvider from "helpers/lenis-provider";
 import AnimatePresenceProvider from "helpers/animate-presence-provider";
@@ -19,6 +12,7 @@ import ContentFeature from "components/FeaturedWork/content_featured";
 import CommercialProjects from "components/commercialProjects";
 import InteriorDesignSection from "components/InteriorDesign";
 import OurValuesComponent from "components/OurValues";
+import OurServicesSection from "components/OurServices";
 
 export default function Home() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -40,6 +34,7 @@ export default function Home() {
           <CommercialProjects />
           <InteriorDesignSection />
           <OurValuesComponent />
+          <OurServicesSection />
           <Footer />
         </main>
       </AnimatePresenceProvider>
