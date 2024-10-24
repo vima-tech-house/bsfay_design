@@ -166,7 +166,7 @@ function OurServicesSection() {
                     </h3>
                   </div>
                   <p className='text-white leading-relaxed text-sm'>
-                    {formatDescription(service.description)}
+                    {service.description}
                   </p>
                 </motion.div>
               </div>

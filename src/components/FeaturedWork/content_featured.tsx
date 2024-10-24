@@ -9,51 +9,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
+
 import ProjectModal from "common/Modal/projectModal";
 import formatDescription from "helpers/textFormater";
+import { featuredWorks, residentialWork } from "data/data";
 
 const acumin_pro = Roboto({
   weight: "400",
   subsets: ["latin"]
 });
-
-const featuredWorks: FeaturedWork[] = [
-  {
-    title: "Kivu Noir",
-    description:
-      "We took a modern take through out the house with a touch of contemporary, minimal and artistic decor/ furniture. This 2 storey home is composed of 1 living room, an open plan kitchen, 1 home office, 1 dining room, 1 master bedroom, 1 guest room, a game room and a cinema room.",
-    image: "/images/kivu_noir.svg",
-    location: "US, Houston",
-    style: "contemporary/ modern"
-  },
-  {
-    title: "Restaurant",
-    description:
-      "Inspired by the client's love of a Mediterranean vacation, the concept is a combination of modern Greek and Italian design elements.",
-    image: "/images/resto.svg",
-    location: "Italy, Rome",
-    style: "Mediterranean"
-  }
-];
-
-const residentialWork: FeaturedWork[] = [
-  {
-    title: "Family Home",
-    description:
-      "A cozy family home designed with functionality and warmth in mind, incorporating modern amenities with traditional comfort.",
-    image: "/images/home.svg",
-    location: "UK, London",
-    style: "Modern Traditional"
-  },
-  {
-    title: "Girls Room",
-    description:
-      "A vibrant and playful girls' room designed to inspire creativity and provide a comfortable space for rest and play.",
-    image: "/images/girls.svg",
-    location: "Canada, Toronto",
-    style: "Playful Contemporary"
-  }
-];
 
 function ContentFeature() {
   const sliderRef = useRef<Slider | null>(null);
@@ -108,8 +72,8 @@ function ContentFeature() {
         }
       }
     ],
-    dotsClass: "slick-dots custom-dots",
-    customPaging: (i: number) => <div className='custom-dot'></div>
+    dotsClass: "slick-dots custom-dots ",
+    customPaging: (i: number) => <div className='custom-dot relative '></div>
   };
 
   const openModal = (project: FeaturedWork) => {
@@ -122,7 +86,10 @@ function ContentFeature() {
   };
 
   return (
-    <section className='relative min-h-screen w-full bg-[#191B20] py-16 bg-cover bg-center text-white'>
+    <section
+      id='featured_work'
+      className='relative min-h-screen w-full bg-[#191B20] py-16 bg-cover bg-center text-white'
+    >
       <Image
         src='/images/portfolio.svg'
         alt='Background'
@@ -159,10 +126,12 @@ function ContentFeature() {
 
         <div className='flex flex-col md:flex-row items-center max-w-5xl mx-auto  relative'>
           <div
-            className='w-full md:w-1/3 lg:w-1/3  top-8  mx-auto pl-4 '
+            className='w-full md:w-1/3 lg:w-1/3  top-8  mx-auto pl-4 pr-5'
             data-aos='fade-up'
           >
-            <h2 className='text-2xl text-[#6D6E72] font-medium mb-6'>
+            <h2
+              className={`text-left sm:text-3xl text-2xl mb-1 font-bold text-[#6D6E72] ${acumin_pro.className}`}
+            >
               Commercial projects
             </h2>
             <p className='text-gray-600 font-light'>
@@ -220,10 +189,12 @@ function ContentFeature() {
 
         <div className='flex flex-col md:flex-row items-center max-w-5xl mx-auto mt-12 relative'>
           <div
-            className='w-full md:w-1/3 lg:w-1/3  top-8  mx-auto pl-4 '
+            className='w-full md:w-1/3 lg:w-1/3  top-8  mx-auto pl-4 pr-5'
             data-aos='fade-up'
           >
-            <h2 className='text-2xl text-[#6D6E72] font-medium mb-6'>
+            <h2
+              className={`text-left sm:text-3xl text-2xl mb-1 font-bold text-[#6D6E72] ${acumin_pro.className}`}
+            >
               Residential projects
             </h2>
             <p className='text-gray-600 font-light'>

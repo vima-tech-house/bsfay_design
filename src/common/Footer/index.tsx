@@ -14,7 +14,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className='w-full bg-[#2D2D2D] relative min-h-screen/2 bg-contain bg-center text-white py-16'
+      className='w-full bg-[#2D2D2D] relative min-h-screen/2 bg-cover bg-bottom text-white py-16'
     >
       <Image
         src='/footer.svg'
@@ -24,8 +24,8 @@ const Footer = () => {
         priority
         className='object-contain object-bottom bg-no-repeat w-12 h-12'
       />
-      <div className='mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col items-center'>
-        <div data-aos='fade-up' data-aos-delay='100' className='mb-8'>
+      <div className='mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col relative items-center'>
+        <div className='pb-8'>
           <div className='flex mx-auto w-full justify-center pb-4'>
             <Image
               width={160}
@@ -37,22 +37,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div
-          data-aos='fade-up'
-          data-aos-delay='200'
-          className='mb-8 text-center max-w-md'
-        >
+        <div className='mb-8 text-center max-w-md'>
           <p className=' font-light'>
             We create living spaces unique to our clients dreams and vision.
           </p>
         </div>
 
-        <div
-          data-aos='fade-up'
-          data-aos-delay='300'
-          className='mb-6 text-center'
-        >
-          <p className=' mb-4 font-light'>Let's stay in touch. Follow us on</p>
+        <div className='text-center'>
+          <p className=' pb-4 font-light'>Let's stay in touch. Follow us on</p>
           <div className='flex justify-center space-x-4'>
             {socialIcons.map(({ Icon, href }, index) => (
               <a
@@ -68,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div data-aos='fade-up' data-aos-delay='400' className=' text-gray-400'>
+        <div className=' text-gray-400 pt-4'>
           <p className='font-light'>© 2024 Bi.SFay. All rights reserved..</p>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <LenisProvider>
       <AnimatePresenceProvider>
-        <main className='box-border flex min-h-screen bg-[#F2F1EF]  w-full flex-col items-center overflow-hidden'>
+        <main className='box-border bg-[#F2F1EF]  w-full flex-col items-center overflow-hidden'>
           <Navbar />
           <Hero />
           <Projects />
@@ -37,7 +37,7 @@ export default function Home() {
           <InteriorDesignSection />
           <OurValuesComponent />
           <OurServicesSection />
-          <TestimonialsSection />
+          {/* <TestimonialsSection /> */}
           <ContactSection />
           <Footer />
         </main>

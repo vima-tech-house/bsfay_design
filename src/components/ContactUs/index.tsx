@@ -88,7 +88,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className='relative w-full py-16 bg-[#f5f5f5]'>
+    <section id='contact' className='relative w-full py-16 '>
       <Toaster position='top-center' richColors />
       <div className=''>
         <motion.div
@@ -123,7 +123,7 @@ const ContactSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className='bg-[#F2F1EF] p-4'
+                className='bg-[#cfcfcf] p-4'
               >
                 <h3
                   className={`text-lg font-normal text-[#6D6E72] mb-1 ${roboto.className}`}

@@ -25,6 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .no-scroll {
@@ -33,6 +35,7 @@ body {
 
 .slider-container {
   position: relative;
+  padding-top: 40px;
   padding-bottom: 40px;
   height: calc(100vh - 160px);
   overflow-y: auto;
@@ -46,6 +49,7 @@ body {
 
 .featured-works-slider {
   height: 100%;
+  position: relative;
 }
 
 .featured-works-slider .slick-track {
@@ -68,22 +72,26 @@ body {
 }
 
 .custom-dots {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: absolute !important;
+  top: -20px !important;
+  right: 0 !important;
   display: flex !important;
   gap: 8px;
   padding: 0;
   margin: 0;
   list-style: none;
+  z-index: 10;
+  width: auto !important;
 }
 
 .custom-dot {
+  position: relative !important;
   width: 8px;
   height: 8px;
-  background-color: rgba(209, 209, 209, 0.5);
+  background-color: rgba(109, 110, 114, 0.3);
   border-radius: 50%;
   transition: all 0.5s cubic-bezier(0.87, 0, 0.13, 1) !important;
+  cursor: pointer;
 }
 
 .slick-active .custom-dot {
@@ -94,7 +102,7 @@ body {
 
 @media (max-width: 1180px) {
   .slider-container {
-    height: 100vh;
+    /* height: 60vh; */
   }
 
   .featured-works-slider .slick-track {
@@ -102,15 +110,14 @@ body {
   }
 
   .custom-dots {
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end !important;
+    padding-right: 16px;
   }
 }
 
 @media (max-width: 768px) {
   .slider-container {
-    height: 100vh;
-    /* width: 60vh; */
+    height: 58vh;
   }
 
   .featured-works-slider .slick-track {
@@ -118,7 +125,7 @@ body {
   }
 
   .custom-dots {
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end !important;
+    padding-right: 8px;
   }
 }

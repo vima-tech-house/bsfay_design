@@ -71,6 +71,7 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ className = "" }) => {
   return (
     <>
       <section
+        id='about'
         className={`relative w-full bg-[#383836] py-24 overflow-hidden ${className}`}
       >
         <div className='container mx-auto px-4 relative'>
