@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
 
   const handleScroll = useCallback(() => {
     const scrollPosition = window.scrollY;
-    const heroSection = document.getElementById("Home");
+    const heroSection = document.getElementById("home");
     const heroSectionHeight = heroSection?.offsetHeight ?? 0;
     setIsHeroSection(scrollPosition < heroSectionHeight - 50);
   }, []);
