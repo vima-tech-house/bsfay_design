@@ -72,7 +72,7 @@ function OurValuesComponent() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className='py-8 mb-16 flex justify-between bg-[#F2F1EF] relative border-r-2 border-[#AEA797]/30 flex-col md:flex-row items-center max-w-5xl mx-auto p-8'
+          className='py-8 mb-16 flex justify-between bg-[#F2F1EF] relative border-r border-[#AEA797]/30 flex-col md:flex-row items-center max-w-5xl mx-auto p-8'
         >
           <h1
             className={`text-left text-4xl font-bold text-[#6D6E72] sm:text-5xl md:text-6xl ${acumin_pro.className}`}

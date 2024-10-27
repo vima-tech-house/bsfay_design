@@ -72,7 +72,7 @@ function ContentFeature() {
         }
       }
     ],
-    dotsClass: "slick-dots custom-dots ",
+    dotsClass: "slick-dots custom-dots",
     customPaging: (i: number) => <div className='custom-dot relative '></div>
   };
 
@@ -103,7 +103,7 @@ function ContentFeature() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className='py-8 mb-16 flex justify-between bg-[#F2F1EF] relative border-r-2 border-[#AEA797]/30  flex-col md:flex-row items-center max-w-5xl mx-auto'
+          className='py-8 mb-16 flex justify-between bg-[#F2F1EF] relative border-r border-[#AEA797]/30  flex-col md:flex-row items-center max-w-5xl mx-auto'
         >
           <h1
             className={`text-left text-4xl font-bold text-[#6D6E72] sm:text-5xl md:text-6xl ${acumin_pro.className}`}
@@ -187,9 +187,9 @@ function ContentFeature() {
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row items-center max-w-5xl mx-auto mt-12 relative'>
+        <div className='flex flex-col md:flex-row items-center max-w-5xl mx-auto mt-2 relative'>
           <div
-            className='w-full md:w-1/3 lg:w-1/3  top-8  mx-auto pl-4 pr-5'
+            className='w-full md:w-1/3 lg:w-1/3  top-8  mx-auto pl-4 pr-5 '
             data-aos='fade-up'
           >
             <h2
@@ -208,12 +208,12 @@ function ContentFeature() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className='slider-container '
+              className='slider-container'
             >
               <Slider
                 ref={sliderRef}
                 {...sliderSettings}
-                className='featured-works-slider '
+                className='featured-works-slider'
               >
                 {residentialWork.map((work, index) => (
                   <div key={index} className=''>
@@ -223,7 +223,7 @@ function ContentFeature() {
                       data-aos-delay={index * 100}
                       onClick={() => openModal(work)}
                     >
-                      <div className='relative lg:aspect-[3/4] aspect-[4/3]'>
+                      <div className='relative lg:aspect-[3/4] aspect-[4/3] '>
                         <Image
                           src={work.image}
                           alt={work.title}
