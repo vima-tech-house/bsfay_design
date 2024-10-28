@@ -2,7 +2,7 @@ interface FeaturedWork {
   title: string;
   description: string;
   image: string;
-  location: string;
+  location?: string;
   style: string;
 }
 
