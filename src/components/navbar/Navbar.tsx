@@ -6,8 +6,7 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import { useLenis } from "@studio-freight/react-lenis";
-
-import Button from "common/Button";
+import Button from "@/src/common/Button";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -108,16 +107,14 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
+    { name: "About section", href: "#about" },
     { name: "Portfolio", href: "#featured_work" }
   ];
 
   const mobileNavItems = [
-    { name: "Home", href: "#Home" },
-    { name: "About us", href: "#AboutUs" },
-    { name: "Projects", href: "#Projects" },
-    { name: "Team", href: "#Team" },
-    { name: "Solutions", href: "#Solutions" },
+    { name: "Home", href: "#home" },
+    { name: "About section", href: "#about" },
+    { name: "Portfolio", href: "#featured_work" },
     { name: "Hire us", href: "#HireUs" }
   ];
 
@@ -144,7 +141,7 @@ const Navbar: React.FC = () => {
             height={40}
             src='/monogram.svg'
             className='w-20 h-20 object-fill object-center'
-            alt='BSFAY monogram'
+            alt='BISFAY monogram'
           />
         </div>
 
@@ -199,7 +196,7 @@ const Navbar: React.FC = () => {
             height={40}
             src='/monogram.svg'
             className='w-20 h-20 object-fill object-center'
-            alt='BSFAY monogram'
+            alt='BISFAY monogram'
           />
         </div>
         <div className='flex flex-col items-start bg-[#2D2D2D] p-6 pb-40'>

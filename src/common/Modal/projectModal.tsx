@@ -63,7 +63,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 transition={{ delay: 0.3 }}
                 className='text-white mb-4 text-sm sm:text-md'
               >
-                {project.location} Style: {project.style}
+                {project.location && `${project.location}`} Style:{" "}
+                {project.style && `Style: ${project.style}`}
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}

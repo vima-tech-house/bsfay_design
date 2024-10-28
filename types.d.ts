@@ -3,19 +3,13 @@ interface FeaturedWork {
   description: string;
   image: string;
   location?: string;
-  style: string;
+  style?: string;
 }
 
 interface ProjectModalProps {
   isOpen: boolean;
   onClose: () => void;
-  project: {
-    title: string;
-    location: string;
-    style: string;
-    description: string;
-    image: string;
-  };
+  project: FeaturedWork;
 }
 
 interface ModalProps {

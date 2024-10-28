@@ -9,10 +9,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
-
-import ProjectModal from "common/Modal/projectModal";
-import formatDescription from "helpers/textFormater";
-import { featuredWorks, residentialWork } from "data/data";
+import { featuredWorks, residentialWork } from "@/src/data/data";
+import formatDescription from "@/src/helpers/textFormater";
+import ProjectModal from "@/src/common/Modal/projectModal";
 
 const acumin_pro = Roboto({
   weight: "400",
@@ -221,7 +220,7 @@ function ContentFeature() {
                       className='overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02]'
                       data-aos='fade-up'
                       data-aos-delay={index * 100}
-                      // onClick={() => openModal(work)}
+                      onClick={() => openModal(work)}
                     >
                       <div className='relative lg:aspect-[3/4] aspect-[4/3] '>
                         <Image
@@ -250,13 +249,13 @@ function ContentFeature() {
           </div>
         </div>
       </div>
-      {/* {selectedProject && (
+      {selectedProject && (
         <ProjectModal
           isOpen={isModalOpen}
           onClose={closeModal}
           project={selectedProject}
         />
-      )} */}
+      )}
     </section>
   );
 }

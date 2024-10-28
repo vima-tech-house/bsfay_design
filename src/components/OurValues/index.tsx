@@ -29,7 +29,7 @@ const values: ValueCard[] = [
     title: "Creativity",
     description:
       "Every project is a canvas, and every client is an inspiration. We approach each design with fresh eyes, ensuring that our creativity is fueled by the uniqueness of our clients and their vision.",
-    icon: "/images/creativity.svg"
+    icon: "/images/passion.svg"
   },
   {
     title: "Openness",
@@ -41,7 +41,7 @@ const values: ValueCard[] = [
     title: "Passion-Driven",
     description:
       "Our passion is the foundation of every project we undertake. We are deeply driven by the purpose and meaning behind our work, striving to deliver designs that not only meet our clients' needs but exceed their expectations.",
-    icon: "/images/passion.svg"
+    icon: "/images/creativity.svg"
   }
 ];
 
