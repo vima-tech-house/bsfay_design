@@ -67,7 +67,7 @@ const ContactSection = () => {
           email: data.email,
           phoneNumber: data.phoneNumber,
           message: data.message,
-          to_name: "BSFAY Studio",
+          to_name: "BISFAY Studio",
           reply_to: data.email
         },
         PUBLIC_KEY

@@ -32,7 +32,7 @@ const Footer = () => {
               height={40}
               src='/images/white.svg'
               className='w-full h-20 object-cover object-center'
-              alt='BSFAY monogram'
+              alt='BISFAY monogram'
             />
           </div>
         </div>

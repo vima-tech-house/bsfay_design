@@ -5,8 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import { useLenis } from "@studio-freight/react-lenis";
 import Lenis from "@studio-freight/lenis";
-
-import ButtonDown from "common/Button/buttonDown";
+import ButtonDown from "@/src/common/Button/buttonDown";
 
 const acumin_pro = Roboto({
   weight: "400",

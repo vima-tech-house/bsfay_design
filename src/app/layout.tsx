@@ -9,7 +9,7 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: "Bsfay Studio",
-  description: "BSFAY Studio",
+  description: "BISFAY Studio",
   icons: "/monogram.svg"
 };
 
