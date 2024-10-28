@@ -61,7 +61,7 @@ const AboutUs = () => {
     <motion.div
       ref={ref}
       id="AboutUs"
-      className='h-auto w-full relative p-4 lg:px-12 py-20 verflow-hidden  min-h-screen  md:px-12 text-white'
+      className='h-auto w-full relative p-4 lg:px-12 py-20 overflow-hidden  min-h-screen  md:px-12 text-white'
       // style={{
       //   backgroundImage: `url('/images/cir.svg')`,
       //   backgroundSize: "cover",
@@ -93,7 +93,7 @@ const AboutUs = () => {
               />
             </motion.div>
             <div>
-              <p className='sm:text-xl'>ABOUT US</p>
+              <h2 className='sm:text-xl my-0 py-0'>ABOUT US</h2>
             </div>
           </div>
           <motion.div

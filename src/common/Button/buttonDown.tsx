@@ -18,7 +18,7 @@ const ButtonDown: React.FC<ButtonProps> = ({
   const ButtonWrapper = href ? "a" : "button";
   return (
     <Link href={href} onClick={onClick}>
-      <button className='flex items-center justify-center bg-black/70 animate-bounce hover:animate-none duration-500  py-4 text-black border-white border-2 rounded-t-full rounded-b-full transition-colors hover:bg-[#000]/80'>
+      <button className='flex items-center justify-center bg-black/50 animate-bounce hover:animate-none duration-500  py-4 text-black border-white/60 border-2 rounded-t-full rounded-b-full transition-colors hover:bg-[#000]/80'>
         {text}
         {Icon && (
           <Icon className='text-white md:text-3xl sm:text-2xl text-xl' />

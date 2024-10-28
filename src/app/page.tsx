@@ -15,6 +15,7 @@ import OurValuesComponent from "components/OurValues";
 import OurServicesSection from "components/OurServices";
 import TestimonialsSection from "components/Testimony";
 import ContactSection from "components/ContactUs";
+import TrustedByMany from "components/Trusted";
 
 export default function Home() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -27,7 +28,7 @@ export default function Home() {
   return (
     <LenisProvider>
       <AnimatePresenceProvider>
-        <main className='box-border bg-[#F2F1EF]  w-full flex-col items-center overflow-hidden'>
+        <main className="box-border bg-[#F2F1EF]  w-full flex-col items-center overflow-hidden">
           <Navbar />
           <Hero />
           <Projects />
@@ -38,6 +39,7 @@ export default function Home() {
           <OurValuesComponent />
           <OurServicesSection />
           {/* <TestimonialsSection /> */}
+          <TrustedByMany />
           <ContactSection />
           <Footer />
         </main>
