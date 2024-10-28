@@ -1,11 +1,13 @@
 export const featuredWorks: FeaturedWork[] = [
   {
-    title: "Kivu Noir",
+    title: "Office",
     description:
-      "We took a modern take through out the house with a touch of contemporary, minimal and artistic decor/ furniture. This 2 storey home is composed of 1 living room, an open plan kitchen, 1 home office, 1 dining room, 1 master bedroom, 1 guest room, a game room and a cinema room.",
-    image: "/images/kivu_noir.svg",
-    location: "US, Houston",
-    style: "contemporary/ modern"
+      `we rehabilitated the home, changing existing bathrooms into niches that would be used
+as phone booths and private corners for the users. adding a moodern touch in the furniture selection to give the space a more of an office feel.
+the clients wanted a neutral palette that can feel comfortable to every employee, in addition we add an extra break room. `,
+    image: "/images/office_2.jpeg",
+    location: "Kigali, Gishushu",
+    style: "Modern"
   },
   {
     title: "Restaurant",

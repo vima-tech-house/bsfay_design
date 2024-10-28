@@ -221,7 +221,7 @@ function ContentFeature() {
                       className='overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02]'
                       data-aos='fade-up'
                       data-aos-delay={index * 100}
-                      onClick={() => openModal(work)}
+                      // onClick={() => openModal(work)}
                     >
                       <div className='relative lg:aspect-[3/4] aspect-[4/3] '>
                         <Image
@@ -250,13 +250,13 @@ function ContentFeature() {
           </div>
         </div>
       </div>
-      {selectedProject && (
+      {/* {selectedProject && (
         <ProjectModal
           isOpen={isModalOpen}
           onClose={closeModal}
           project={selectedProject}
         />
-      )}
+      )} */}
     </section>
   );
 }
