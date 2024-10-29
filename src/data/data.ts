@@ -1,18 +1,19 @@
 export const featuredWorks: FeaturedWork[] = [
   {
-    title: "Office",
-    description:
-      `we rehabilitated the home, changing existing bathrooms into niches that would be used
-as phone booths and private corners for the users. adding a moodern touch in the furniture selection to give the space a more of an office feel.
-the clients wanted a neutral palette that can feel comfortable to every employee, in addition we add an extra break room. `,
+    title: "Offices",
+    description: `By blending aesthetics with functionality, we create office spaces that not only 
+represent the brand but also empower the workforce, ultimately leading to 
+increased productivity and satisfaction. Our goal is to design workplaces that 
+inspire and nurture the people within them, making every day at the office a 
+positive experience.`,
     image: "/images/office_2.jpeg",
     location: "Kigali, Gishushu",
     style: "Modern"
   },
   {
-    title: "Restaurant",
+    title: "Restaurants/cafes",
     description:
-      "Inspired by the client's love of a Mediterranean vacation, the concept is a combination of modern Greek and Italian design elements.",
+      "We focus on creating inviting atmospheres through thoughtful layouts, comfortable seating, and captivating decor that aligns with the theme of the establishment. Elements like lighting, color palettes, and textures are carefully chosen to evoke the desired ambiance, whether it is a cozy café or an upscale dining venue.",
     image: "/images/resto.svg",
     location: "Italy, Rome",
     style: "Mediterranean"
@@ -23,9 +24,9 @@ export const residentialWork: FeaturedWork[] = [
   {
     title: "Family Home",
     description:
-      "A cozy family home designed with functionality and warmth in mind, incorporating modern amenities with traditional comfort.",
+      "Designed a modern family home for our client with creative, unique paintings that bring a fresh look to the house.",
     image: "/images/home.svg",
-    location: "UK, London",
+    location: "Kigali, Rwanda",
     style: "Modern Traditional"
   },
   {
@@ -33,7 +34,7 @@ export const residentialWork: FeaturedWork[] = [
     description:
       "A vibrant and playful girls' room designed to inspire creativity and provide a comfortable space for rest and play.",
     image: "/images/girls.svg",
-    location: "Canada, Toronto",
+    location: "Kigali, Rwanda",
     style: "Playful Contemporary"
   }
 ];

@@ -10,8 +10,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
-import ProjectModal from "common/Modal/projectModal";
-import formatDescription from "helpers/textFormater";
 
 const acumin_pro = Roboto({
   weight: "400",
@@ -86,10 +84,10 @@ function OurValuesComponent() {
             data-aos='fade-up'
             data-aos-delay='400'
           >
-            Guided by thoughtful attention to detail, we create designs with
-            intention and purpose. We approach each project with curiosity and
-            dedication, ensuring every space is a reflection of innovation and
-            authenticity.
+            Our company values center around creativity, collaboration,
+            individuality, and user-centered design. We are committed to
+            crafting spaces that reflect our clients' visions while enhancing
+            the experiences of everyone who interacts with those environments.
           </p>
         </motion.div>
 

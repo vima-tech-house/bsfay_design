@@ -15,15 +15,26 @@ const acumin_pro = Roboto({
 const projects: FeaturedWork[] = [
   {
     title: "Kivu Noir",
-    description:
-      "We design a coffee shop that reflected the customers brand essence, through modern furniture and a touch of a rustic unrefined material, that lets each material shine in its own way.",
+    description: ` we design a coffee shop that reflected the customers brand essence, 
+through modern furniture and a touch of a rustic unrefined material, that lets 
+each material shine in its own way. 
+we rehabilitated an existing home into a modern cafe by keeping some 
+essence of the original home and giving them a fresh new look. we kept the 
+bones of the home and removed walls to create an open plan. The cafe consist of a open plan main cafe space, a private working space, 
+a tasting room, an open plan kitchen, customer bathrooms and staff 
+changing rooms.  `,
     image: "/images/kivu_noir.svg",
     style: "modern/ afrocentric"
   },
   {
     title: "Mukati na butta",
-    description:
-      "The project required us to design 3 prototypes for 2 apartments and 1 loft, which would have been used throughout the project, which is composed of 8 apartments.",
+    description: `we crafted a space that perfectly embodied our client’s joyfulness and warmth, reflecting their 
+vibrant and natural brand. The design features an inviting layout with bright, cheerful colors and 
+wooden accents that create a cozy atmosphere. Large windows allow natural light to flood the space, enhancing the warmth and welcoming vibe. 
+We incorporated open shelving showcasing freshly baked goods, allowing customers to feel the 
+heart of the bakery. Comfortable seating areas encourage social interaction, while playful design 
+elements like line art frames and unique light fixtures infuse the space with personality. 
+`,
     image: "/cafe.jpeg",
     style: "modern/ afrocentric"
   },
@@ -76,12 +87,16 @@ const CommercialProjects: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className='text-[#818286] mb-12 max-w-2xl'
+          className='text-[#818286] mb-12 max-w-5xl'
           data-aos='fade-up'
           data-aos-delay='100'
         >
-          We believe in being present and thoughtful in everything we do. By
-          respecting ourselves, our clients, and the environments we work.
+          By integrating thoughtful design elements that appeal to the senses
+          and encourage interaction, we create welcoming atmospheres where
+          people feel at ease. Our collaborative approach ensures that the needs
+          and aspirations of both the client and the end user are woven into the
+          fabric of the space, resulting in a dynamic setting that inspires and
+          resonates with all who enter.
         </motion.p>
 
         <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8'>
