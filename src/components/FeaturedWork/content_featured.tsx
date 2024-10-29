@@ -134,8 +134,11 @@ function ContentFeature() {
               Commercial projects
             </h2>
             <p className='text-gray-600 font-light'>
-              We believe in being present and thoughtful in everything we do. By
-              respecting ourselves, our clients, and the environments we work.
+              we focus on crafting environments that not only embody our
+              clients’ vision and brand identity but also engage the end user in
+              a meaningful way. We believe that a successful space reflects the
+              ethos of the brand while fostering comfort and connection for
+              everyone who interacts with it.
             </p>
           </div>
 
@@ -197,8 +200,9 @@ function ContentFeature() {
               Residential projects
             </h2>
             <p className='text-gray-600 font-light'>
-              We believe in being present and thoughtful in everything we do. By
-              respecting ourselves, our clients, and the environments we work.
+              We craft residential spaces that resonate with the heart of each
+              family, making their home a sanctuary that embodies who they are
+              and how they want to live.
             </p>
           </div>
 

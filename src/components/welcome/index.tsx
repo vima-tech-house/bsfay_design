@@ -190,40 +190,58 @@ const WelcomeSection: React.FC<WelcomeSectionProps> = ({ className = "" }) => {
         <p
           data-aos='fade-up'
           data-aos-delay='200'
-          className='text-lg leading-relaxed'
+          className='lg:text-lg leading-relaxed'
         >
           Welcome to Bi.SFay Studio Ltd, where design meets purpose and
-          creativity brings visions to life.
+          creativity brings visions to life. As a premier interior architecture
+          studio, we specialize in transforming both residential and commercial
+          spaces into environments that resonate with the individuality and
+          aspirations of our clients.
         </p>
 
         <p
           data-aos='fade-up'
           data-aos-delay='300'
-          className='text-lg leading-relaxed'
+          className='lg:text-lg leading-relaxed'
         >
-          As a premier interior architecture studio, we specialize in
-          transforming both residential and commercial spaces into environments
-          that resonate with the individuality and aspirations of our clients.
+          We believe that every space tells a story, and our goal is to ensure
+          that your space is a true reflection of your dreams, personality, and
+          identity. From modern urban homes to innovative commercial
+          environments, we blend aesthetics, functionality, and thoughtful
+          design to create spaces that inspire and connect.
         </p>
 
         <p
           data-aos='fade-up'
           data-aos-delay='300'
-          className='text-lg leading-relaxed'
+          className='lg:text-lg leading-relaxed'
         >
-          As a premier interior architecture studio, we specialize in
-          transforming both residential and commerciTal spaces into environments
-          that resonate with the individuality and aspirations of our clients.
+          Our mission goes beyond creating beautiful interiors—we aim to craft
+          spaces that foster community, connection, and belonging. By tailoring
+          each project to the unique needs and desires of our clients, we
+          seamlessly adapt conceptual designs that not only serve their purpose
+          but also elevate the way people live, work, and interact.
         </p>
 
         <p
           data-aos='fade-up'
           data-aos-delay='400'
-          className='text-lg leading-relaxed'
+          className='lg:text-lg leading-relaxed'
         >
-          As a premier interior architecture studio, we specialize in
-          transforming both residential and commerciTal spaces into environments
-          that resonate with the individuality and aspirations of our clients.
+          At Bi.SFay Studio Ltd, we understand that no two projects are the
+          same. We are committed to listening closely, collaborating openly, and
+          executing with precision, ensuring that the final result is an
+          environment that speaks to your vision and enhances your everyday
+          experiences.
+        </p>
+        <p
+          data-aos='fade-up'
+          data-aos-delay='400'
+          className='lg:text-lg leading-relaxed'
+        >
+          Whether you're looking to reimagine your home, or design a commercial
+          space that brings people together, we're here to bring your ideas to
+          life, one thoughtful design at a time.
         </p>
       </Modal>
     </>

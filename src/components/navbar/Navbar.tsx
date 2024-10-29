@@ -107,13 +107,13 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "About section", href: "#about" },
+    { name: "About us", href: "#about" },
     { name: "Portfolio", href: "#featured_work" }
   ];
 
   const mobileNavItems = [
     { name: "Home", href: "#home" },
-    { name: "About section", href: "#about" },
+    { name: "About us", href: "#about" },
     { name: "Portfolio", href: "#featured_work" },
     { name: "Hire us", href: "#HireUs" }
   ];
