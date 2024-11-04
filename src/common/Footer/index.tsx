@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   const socialIcons = [
-    { Icon: FaInstagram, href: "#" },
+    { Icon: FaInstagram, href: "https://www.instagram.com/bi.sfay_studio/" },
     { Icon: FaFacebookF, href: "#" }
   ];
 
